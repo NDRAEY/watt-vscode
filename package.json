@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "publisher": "NDRAEY",
   "repository": "https://github.com/NDRAEY/watt-vscode",
+  "icon": "static/logo.png",
   "engines": {
     "vscode": "^1.101.0"
   },
