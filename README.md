@@ -23,3 +23,7 @@ Added icon
 ### 1.0.2
 
 Lower version to be compatible with older versions
+
+### 1.0.3
+
+Add `else` highlighting

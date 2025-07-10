@@ -129,7 +129,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.watt",
-					"match": "\\b(unit|import|native|trait|impl|type|if|while|for|return)\\b"
+					"match": "\\b(unit|import|native|trait|impl|type|if|else|while|for|return)\\b"
 				}
 			]
 		},

@@ -9,3 +9,8 @@
 ## 1.0.2
 
 - Lower version to be compatible
+
+## 1.0.3
+
+- Add `else` highlighting
+
