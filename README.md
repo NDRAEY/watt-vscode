@@ -27,3 +27,8 @@ Lower version to be compatible with older versions
 ### 1.0.3
 
 Add `else` highlighting
+
+## 1.0.4
+
+- Add `and`, `or`, `in` highlighting
+

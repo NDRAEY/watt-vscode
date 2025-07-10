@@ -14,3 +14,7 @@
 
 - Add `else` highlighting
 
+## 1.0.4
+
+- Add `or`, `and` and `in` highlighting
+
