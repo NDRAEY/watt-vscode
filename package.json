@@ -2,7 +2,7 @@
   "name": "watt-vscode",
   "displayName": "watt-vscode",
   "description": "Watt language support for Visual Studio Code",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publisher": "NDRAEY",
   "repository": "https://github.com/NDRAEY/watt-vscode",
   "icon": "static/logo.png",
