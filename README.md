@@ -32,3 +32,5 @@ Add `else` highlighting
 
 - Add `and`, `or`, `in` highlighting
 
+## 1.0.5
+- Add `match`, `with`, `impls`, `case`, `default`, `lambda` highlighting
