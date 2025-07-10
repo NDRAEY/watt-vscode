@@ -5,3 +5,7 @@
 ## 1.0.1 
 
 - Added icon
+
+## 1.0.2
+
+- Lower version to be compatible
