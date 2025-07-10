@@ -1,0 +1,27 @@
+{
+  "name": "watt-vscode",
+  "displayName": "watt-vscode",
+  "description": "Watt language support for Visual Studio Code",
+  "version": "1.0.0",
+  "publisher": "NDRAEY",
+  "repository": "https://github.com/NDRAEY/watt-vscode",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "watt",
+      "aliases": ["Watt", "watt"],
+      "extensions": [".wt"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "watt",
+      "scopeName": "source.watt",
+      "path": "./syntaxes/watt.tmLanguage.json"
+    }]
+  }
+}

@@ -1,0 +1,177 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Watt",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#method_call"
+		},
+		{
+			"include": "#typename"
+		},
+		{
+			"include": "#function_definition"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#variables"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.block.watt",
+					"begin": "/\\*",
+					"end": "\\*/"
+				},
+				{
+					"name": "comment.line.watt",
+					"match": "(//).*$"
+				}
+			]
+		},
+		"typename": {
+			"name": "entity.name.type.watt",
+			"patterns": [
+				{
+					"match": "\\b(new)\\s+(_?[A-Za-z0-9_]*)\\b",
+					"captures": {
+                        "1": {
+                            "name": "keyword.declaration.new.watt"
+                        },
+                        "2": {
+                            "name": "entity.name.type.watt"
+                        }
+                    }
+				},
+				{
+					"match": "\\b(type|unit)\\s+(_?[A-Za-z0-9_]*)\\b",
+					"captures": {
+                        "1": {
+                            "name": "keyword.declaration.new.watt"
+                        },
+                        "2": {
+                            "name": "entity.name.type.watt"
+                        }
+                    }
+				},
+				{
+					"match": "\\b(new)\\b",
+					"captures": {
+						"1": {
+                            "name": "keyword.declaration.new.watt"
+                        }
+					}
+				}
+			]
+		},
+		"function_definition": {
+			"name": "meta.function.definition.watt",
+			"patterns": [
+				{
+					"match": "\\b(fun)\\s+([A-Za-z0-9_]+)\\b",
+					"captures": {
+                        "1": {
+                            "name": "keyword.declaration.fun.watt"
+                        },
+                        "2": {
+                            "name": "entity.name.function.watt"
+                        }
+                    }
+				}
+			]
+		},
+		"method_call": {
+			"name": "meta.function.call.watt",
+			"begin": "([A-Za-z0-9_]+)(\\()",
+			"beginCaptures": {
+				"1": {
+					"name": "entity.name.function.watt"
+				},
+				"2": {
+					"name": "punctuation.brackets.round.watt"
+				}
+			},
+			"end": "\\)",
+			"patterns": [
+				{
+					"include": "#comments"
+				},
+				{
+					"include": "#strings"
+				},
+				{
+					"include": "#keywords"
+				},
+				{
+					"include": "#method_call"
+				},
+				{
+					"include": "#constants"
+				},
+				{
+					"include": "#variables"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.watt",
+					"match": "\\b(unit|import|native|trait|impl|type|if|while|for|return)\\b"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.language.bool.watt",
+					"match": "\\b(true|false)\\b"
+				},
+				{
+					"name": "constant.language.null.watt",
+					"match": "\\bnull\\b"
+				},
+				{
+					"name": "constant.numeric.decimal.watt",
+                    "match": "\\b\\d[\\d_]*(\\.?)[\\d_]*(?:(E|e)([+-]?)([\\d_]+))?\\b"
+				},
+				{
+                    "name": "variable.language.self.watt",
+                    "match": "\\bself\\b"
+                }
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.watt",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.watt",
+					"match": "\\\\."
+				}
+			]
+		},
+		"variables": {
+			"patterns": [
+				{
+					"name": "variable.other.watt",
+					"match": "\\b[a-z0-9_]+\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.watt"
+}
