@@ -7,10 +7,10 @@
   "repository": "https://github.com/NDRAEY/watt-vscode",
   "icon": "static/logo.png",
   "engines": {
-    "vscode": "^1.100.0"
+    "vscode": "^1.90.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages", "Snippets"
   ],
   "contributes": {
     "languages": [{
@@ -23,6 +23,10 @@
       "language": "watt",
       "scopeName": "source.watt",
       "path": "./syntaxes/watt.tmLanguage.json"
+    }],
+    "snippets": [{
+      "language": "javascript",
+      "path": "./snippets.json"
     }]
   }
 }
