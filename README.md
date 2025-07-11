@@ -1,6 +1,6 @@
 # watt-vscode
 
-Watt syntax highlighting for Watt programming language.
+Syntax highlighting for Watt programming language.
 
 ## Features
 
@@ -28,7 +28,9 @@ Lower version to be compatible with older versions
 
 Add `else` highlighting
 
-## 1.0.4
+### 1.0.4
 
 - Add `and`, `or`, `in` highlighting
 
+## 1.0.5
+- Add `match`, `with`, `impls`, `case`, `default`, `lambda` highlighting
