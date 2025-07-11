@@ -30,7 +30,9 @@ Add `else` highlighting
 
 ### 1.0.4
 
-- Add `and`, `or`, `in` highlighting
+Add `and`, `or`, `in` highlighting
 
 ## 1.0.5
-- Add `match`, `with`, `impls`, `case`, `default`, `lambda` highlighting
+
+Add `match`, `with`, `impls`, `case`, `default`, `lambda` highlighting.
+Add snippets.
