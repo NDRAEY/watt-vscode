@@ -1,0 +1,35 @@
+{
+	"Function definition": {
+		"scope": "watt",
+		"prefix": "fun",
+		"body": [
+			"fun $1 {$2}"
+		],
+		"description": "Defines a function"
+	},
+
+	"Function definition with parameters": {
+		"scope": "watt",
+		"prefix": "func",
+		"body": [
+			"fun $1($2) {$3}"
+		],
+		"description": "Defines a function with parameters"
+	},
+	"Variable definition": {
+		"scope": "watt",
+		"prefix": "let",
+		"body": [
+			"$1 := $2"
+		],
+		"description": "Defines a variable"
+	},
+	"Unit declaration": {
+		"scope": "watt",
+		"prefix": "unit",
+		"body": [
+			"unit $1 {$2}"
+		],
+		"description": "Defines an unit"
+	}
+}
