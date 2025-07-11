@@ -25,8 +25,8 @@
       "path": "./syntaxes/watt.tmLanguage.json"
     }],
     "snippets": [{
-      "language": "javascript",
-      "path": "./snippets.json"
+      "language": "watt",
+      "path": "./snippets/snippets.json"
     }]
   }
 }

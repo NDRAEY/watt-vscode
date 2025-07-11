@@ -89,6 +89,14 @@
                             "name": "entity.name.function.watt"
                         }
                     }
+				},
+				{
+					"match": "\\b(fun)\\b",
+					"captures": {
+                        "1": {
+                            "name": "keyword.declaration.fun.watt"
+                        }
+                    }
 				}
 			]
 		},
