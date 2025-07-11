@@ -59,12 +59,20 @@
 					"match": "\\b(type|unit)\\s+(_?[A-Za-z0-9_]*)\\b",
 					"captures": {
                         "1": {
-                            "name": "keyword.declaration.new.watt"
+                            "name": "keyword.declaration.watt"
                         },
                         "2": {
                             "name": "entity.name.type.watt"
                         }
                     }
+				},
+				{
+					"match": "\\b(unit)\\b",
+					"captures": {
+						"1": {
+                            "name": "keyword.declaration.unit.watt"
+                        }
+					}
 				},
 				{
 					"match": "\\b(new)\\b",
@@ -137,7 +145,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.watt",
-					"match": "\\b(unit|import|native|trait|impl|type|if|else|while|for|return|or|and|in)\\b"
+					"match": "\\b(import|native|trait|impl|type|if|else|while|for|return|or|and|in)\\b"
 				}
 			]
 		},
